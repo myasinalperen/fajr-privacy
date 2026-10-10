@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAJR Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Literata:opsz,wght@7..72,500;7..72,650&display=swap">
+<style>
+/* Layout: one calm reading column; a "what leaves your phone" ledger up top, then the policy, then account deletion as its own anchored section. */
+:root{
+  --bg:#f4f6f3; --surface:#e7ece5; --fg:#18241e; --muted:#4c5c53; --line:#c9d3cb; --accent:#28634b; --accent-ink:#f6faf7;
+  --display:"Literata",Georgia,"Times New Roman",serif;
+  --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#101714;--surface:#18221d;--fg:#e8efe9;--muted:#a5b5aa;--line:#2b3a32;--accent:#7fc7a3;--accent-ink:#0d1a14;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101714;--surface:#18221d;--fg:#e8efe9;--muted:#a5b5aa;--line:#2b3a32;--accent:#7fc7a3;--accent-ink:#0d1a14;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding-inline:16px;padding-block:0 64px}
+main{max-width:44rem;margin:0 auto;display:grid;gap:8px}
+header{padding-block:40px 8px;display:grid;gap:10px}
+.meta{color:var(--muted);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+h1,h2{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:clamp(30px,6vw,42px);font-weight:650}
+h2{font-size:23px;font-weight:650;margin-top:28px}
+p,ul{margin:6px 0 0}
+ul{padding-left:1.2em}
+li+li{margin-top:4px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px}
+.ledger{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:14px}
+.ledger h2{margin-top:0;font-size:19px}
+.ledger dl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:8px 18px;margin:12px 0 0}
+.ledger dt{font-weight:700}
+.ledger dd{margin:0;color:var(--muted)}
+@media (max-width:560px){.ledger dl{grid-template-columns:1fr}.ledger dd{margin-bottom:6px}}
+.delete{border-top:3px solid var(--accent);padding-top:6px;margin-top:20px}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:10px}
+.contact code{font:600 16px/1.4 var(--body);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;user-select:all;word-break:break-all}
+.contact button{font:600 14px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+hr{border:0;border-top:1px solid var(--line);margin:48px 0 8px}
+</style>
+</head>
+<body>
+<main>
+<section id="en" lang="en">
+<header>
+  <span class="meta">FAJR for Android · version 0.7.0 · effective 9 October 2026</span>
+  <h1>Privacy Policy</h1>
+  <p>FAJR is a prayer-time, Fajr alarm and Islamic learning app published by <strong>Electrobrains Lab</strong> (Ankara, Türkiye). Most of what you do in FAJR stays on your phone. This page explains what does leave it.</p>
+  <nav aria-label="Sections"><a href="#delete-account">Delete your account</a><a href="#contact">Contact</a><a href="#tr">Türkçe</a></nav>
+</header>
+
+<div class="ledger">
+  <h2>What leaves your phone</h2>
+  <dl>
+    <dt>Google sign-in (optional)</dt><dd>Your Google account ID, email and sign-in tokens are processed by Google and Firebase Authentication. Nothing else is uploaded.</dd>
+    <dt>Prayer timetable requests</dt><dd>When Diyanet is the source, the selected place's ID is sent to Diyanet over HTTPS. Coordinates are never sent.</dd>
+    <dt>City lookup from GPS</dt><dd>Android's geocoding provider may process your coordinates over the network.</dd>
+    <dt>FAJR Premium subscription (optional)</dt><dd>Payment and subscription status are handled by Google Play. FAJR never sees your card or bank details.</dd>
+    <dt>Stays on your phone</dt><dd>Name, age range, avatar, goals, prayer history, Journey progress, Qur'an reading progress and all onboarding answers.</dd>
+  </dl>
+</div>
+
+<h2>What FAJR stores</h2>
+<p>FAJR stores your optional profile name, optional age range, character preference, selected goals and daily routine, avatar choice, preferences, prayer records, Journey progress, the lesson checkpoint (current step, zikir count and ayahs read), Qur'an reading data (reading position, favourite ayahs, ayahs read for the khatm, today's reading and app points), sound/haptics/animation settings and a random local profile identifier in the app's private storage on your device. Prayer and learning records are stored in a local database. FAJR does not send your worship history or Journey responses to the publisher or to Diyanet.</p>
+
+<h2>First launch and personalisation</h2>
+<p>Name, age range and character preference are optional. Signing in is optional. The age range is used only on your device to frame daily suggestions around school, breaks or a quiet moment; you can remove it in Profile → My daily routine. Goals prioritise daily suggestions, and character preference filters your own avatars. These fields are not sent to Diyanet, Firebase or the publisher. An unfinished onboarding draft is kept locally so you can resume after the app restarts.</p>
+
+<h2>Location and prayer times</h2>
+<p>“Use my location” requests approximate foreground location (precise location is never requested) after you grant Android permission. Android's geocoding provider may process coordinates over the network to find your country, city and district. Timezone lookup and astronomical calculation run on your device. FAJR does not request background location and does not track you.</p>
+<p>Diyanet is the default prayer-time source. FAJR retrieves country, state and city lists on demand and the selected place's public timetable from <a href="https://namazvakitleri.diyanet.gov.tr" rel="noopener">Diyanet's prayer-time website</a> over HTTPS. The request contains place identifiers and the app version, not coordinates, your name, your local profile ID or your worship history. Diyanet's server sees normal network data such as your IP address and controls its own logging and retention. Only the selected place's validated calendar is cached, from yesterday up to 44 days ahead, so alarms keep working offline. The Calculation Method source makes no timetable requests.</p>
+
+<h2>Alarms and notifications</h2>
+<p>Prayer reminders and the Fajr wake-up alarm are separate settings. The wake-up alarm uses exact-alarm access, an alarm notification, lock-screen display where available and a foreground audio service while it rings. The alarm challenge is stored locally so it survives an app restart. These permissions do not transmit your prayer history, and you can change them in Android Settings.</p>
+<p>To silence the standard wake-up alarm you walk 20 steps and then say “Bismillahirrahmanirrahim” 10 times. Steps are counted on your phone with the motion sensor (Physical activity permission) or the accelerometer; step data is not stored or sent. The microphone (optional permission) is used only while the alarm or its trial is on screen: audio is passed to your phone's speech recognition service (for example Google's), which may process it on the device or on its servers under its own privacy policy. FAJR keeps only the number of accepted repetitions for the current alarm; it never records, stores or sends audio or transcripts. While the alarm rings the screen is set to full brightness and the flashlight blinks once a second; the flashlight can be turned off in alarm settings. If speech recognition is unavailable (for example offline), FAJR counts each spoken repetition from the loudness of your voice on the phone itself; this audio is analysed in memory and never recorded, stored or sent. If you deny the microphone, a puzzle replaces the spoken step. While the alarm rings FAJR briefly mutes media sounds during listening and, unless you turn off “Keep the alarm loud” in alarm settings, keeps the alarm volume from being lowered; both are restored when the alarm ends.</p>
+
+<h2>Google account</h2>
+<p>Signing in with Google is optional. FAJR uses Android Credential Manager and Firebase Authentication (Google LLC). When you sign in, Google and Firebase process your account identifier, email address, authentication tokens and normal service and network metadata, including your IP address, which Firebase uses for security and abuse prevention, under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. FAJR does not upload prayer records, lesson answers, GPS coordinates or onboarding answers to Firebase. Cloud backup and synchronisation are not active, so signing in on another phone does not restore your history.</p>
+
+<h2 id="subscriptions">FAJR Premium subscriptions</h2>
+<p>FAJR Premium is an optional auto-renewing subscription (monthly or yearly, with a free trial for eligible new subscribers) sold through Google Play Billing. Google Play processes the payment, your payment method, billing country and purchase records under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> and the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>. The app asks Google Play on your phone whether the subscription is active and stores only that yes/no status locally so the Fajr alarm can use Premium challenges offline. Purchase tokens are sent only back to Google Play to confirm the purchase; FAJR does not send them to the publisher or any other server. Premium belongs to your Google Play account, not to a FAJR sign-in. You can cancel at any time in Google Play → Payments &amp; subscriptions; refunds follow Google Play's refund policy. Deleting local data or your FAJR account does not cancel a subscription.</p>
+
+<h2>Advertising, analytics and crash reports</h2>
+<p>FAJR contains no advertising SDK, no analytics SDK and no crash-reporting SDK. If this changes, this policy will be updated before the change ships.</p>
+
+<h2>Retention and local deletion</h2>
+<p>Your records stay on your phone until you remove them. Profile → Privacy → Delete all local data removes the profile, history, progress, cached timetable and preferences and stops the alarm. “Forget saved location” removes location settings and the reminders and alarm that depend on them. Clearing app data or uninstalling also removes everything. Android cloud backup and device-transfer backup are disabled, and the publisher keeps no remote copy of your records.</p>
+
+<h2>Security and choices</h2>
+<p>Local records use Android's app-private storage. Network requests use HTTPS. You can decline location, notification and alarm permissions and still use the other features. Language, appearance, sounds, haptics, animations and prayer-time source can be changed in the app.</p>
+
+<h2>Children</h2>
+<p>FAJR is not directed at children under 13 and does not knowingly collect personal data from them. Google sign-in is optional and follows Google's own account age rules.</p>
+
+<section id="delete-account" class="delete">
+<h2>Delete your FAJR account</h2>
+<p>This applies if you signed in to FAJR with Google. Deleting your FAJR account removes your FAJR sign-in record (Firebase account ID, email address and sign-in provider) from Firebase Authentication. Your Google account itself is not deleted.</p>
+<p><strong>In the app:</strong> open Profile → Google account → Delete FAJR account and confirm. Deletion is immediate. If Android asks you to sign in again first, do so and repeat the step.</p>
+<p><strong>Without the app:</strong> send an email from the Google address you used, with the subject “FAJR account deletion”, to the address below. Your FAJR sign-in record is deleted within 30 days and you receive a confirmation reply.</p>
+<p><strong>What is kept:</strong> nothing on FAJR's side. Prayer history and progress were never uploaded, so they stay on your phone until you delete them in Profile → Privacy → Delete all local data or uninstall the app. Google may keep its own security logs under Google's Privacy Policy.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Publisher: Electrobrains Lab, Ankara, Türkiye. For privacy questions or account deletion, write to:</p>
+<div class="contact"><code id="mail-en">alperenmyasin@gmail.com</code><button type="button" id="copy-en" data-target="mail-en">Copy email</button></div>
+<p>Changes to this policy are published on this page with a new effective date.</p>
+</section>
+</section>
+
+<hr>
+
+<section id="tr" lang="tr">
+<header>
+  <span class="meta">Android için FAJR · sürüm 0.7.0 · yürürlük 9 Ekim 2026</span>
+  <h1>Gizlilik Politikası</h1>
+  <p>FAJR, <strong>Electrobrains Lab</strong> (Ankara, Türkiye) tarafından yayımlanan bir namaz vakti, Fajr alarmı ve dini öğrenme uygulamasıdır. FAJR'da yaptıklarının çoğu telefonunda kalır. Bu sayfa telefonundan nelerin çıktığını açıklar.</p>
+  <nav aria-label="Bölümler"><a href="#hesap-silme">Hesabını sil</a><a href="#iletisim">İletişim</a><a href="#en">English</a></nav>
+</header>
+
+<div class="ledger">
+  <h2>Telefonundan çıkan bilgiler</h2>
+  <dl>
+    <dt>Google ile giriş (isteğe bağlı)</dt><dd>Google hesap kimliğin, e-postan ve giriş anahtarların Google ve Firebase Authentication tarafından işlenir. Başka bir şey yüklenmez.</dd>
+    <dt>Namaz vakti istekleri</dt><dd>Kaynak Diyanet ise seçilen yerin kimliği HTTPS ile Diyanet'e gönderilir. Koordinat gönderilmez.</dd>
+    <dt>GPS ile şehir bulma</dt><dd>Android'in adres sağlayıcısı koordinatları ağ üzerinden işleyebilir.</dd>
+    <dt>FAJR Premium aboneliği (isteğe bağlı)</dt><dd>Ödeme ve abonelik durumu Google Play tarafından yönetilir. FAJR kart veya banka bilgilerini hiçbir zaman görmez.</dd>
+    <dt>Telefonunda kalanlar</dt><dd>Ad, yaş aralığı, avatar, hedefler, namaz geçmişi, Journey ilerlemesi, Kur'an okuma ilerlemesi ve tüm anket cevapları.</dd>
+  </dl>
+</div>
+
+<h2>Cihazında tutulan bilgiler</h2>
+<p>İsteğe bağlı adın, yaş aralığın, karakter tercihin, seçtiğin hedefler ve günlük rutin, avatarın, tercihler, namaz geçmişi, Journey ilerlemesi, aktif ders (adım, zikir sayısı ve okunan ayetler), Kur'an okuma bilgileri (kaldığın yer, favori ayetler, hatim için okunan ayetler, günlük okuma ve uygulama puanları), ses/titreşim/animasyon ayarları ve rastgele yerel profil kimliği uygulamanın cihazındaki özel alanında tutulur. Namaz ve öğrenme kayıtları yerel veritabanındadır. İbadet geçmişi ve ders cevapları yayıncıya veya Diyanet'e gönderilmez.</p>
+
+<h2>İlk açılış ve kişiselleştirme</h2>
+<p>İsim, yaş aralığı ve karakter tercihi isteğe bağlıdır; giriş yapmak da isteğe bağlıdır. Yaş aralığı yalnız cihazda, günlük öneriyi okul gününe, molaya veya sakin bir ana uyarlamak için kullanılır; Profil → Günlük rutinim alanından kaldırılabilir. Bu bilgiler Diyanet'e, Firebase'e veya yayıncıya gönderilmez. Tamamlanmamış anket taslağı, uygulama yeniden açıldığında devam edebilmen için cihazda tutulur.</p>
+
+<h2>Konum ve namaz vakitleri</h2>
+<p>“Konumumu kullan” Android izninden sonra yalnız yaklaşık ön plan konumu alır (hassas konum istenmez). Android'in adres sağlayıcısı ülke, şehir ve ilçe bulmak için koordinatları ağ üzerinden işleyebilir. Saat dilimi ve astronomik vakit hesabı cihazda yapılır. Arka plan konumu istenmez ve takip yapılmaz.</p>
+<p>Varsayılan kaynak Diyanet'tir. Seçilen yerin takvimi <a href="https://namazvakitleri.diyanet.gov.tr" rel="noopener">Diyanet'in namaz vakitleri sitesinden</a> HTTPS ile alınır. İstekte yer kimliği ve uygulama sürümü bulunur; koordinat, adın, yerel kimliğin veya ibadet geçmişin bulunmaz. Diyanet sunucusu IP gibi olağan ağ bilgilerini görebilir ve kendi kayıtlarından sorumludur. Alarmların çevrimdışı çalışması için yalnız seçilen yerin doğrulanmış takvimi, dünden en fazla 44 gün sonrasına kadar saklanır. Hesaplama yöntemi seçeneği takvim isteği yapmaz.</p>
+
+<h2>Alarm ve bildirimler</h2>
+<p>Namaz hatırlatıcısı ve Fajr uyandırma alarmı ayrı ayarlardır. Alarm; tam zamanlı alarm izni, alarm bildirimi, mümkünse kilit ekranı gösterimi ve çalarken ön plan ses servisi kullanır. Alarm görevi uygulama yeniden başlasa da kaybolmaması için cihazda tutulur. Bu izinler namaz geçmişini göndermez; Android Ayarlarından değiştirilebilir.</p>
+<p>Standart uyandırma alarmını susturmak için 20 adım atar, ardından 10 kez “Bismillâhirrahmânirrahîm” dersin. Adımlar telefonunda hareket sensörüyle (Fiziksel aktivite izni) veya ivmeölçerle sayılır; adım verisi saklanmaz ve gönderilmez. Mikrofon (isteğe bağlı izin) yalnız alarm veya alarm denemesi ekrandayken kullanılır: ses, telefonundaki konuşma tanıma servisine (ör. Google) iletilir; bu servis sesi cihazda ya da kendi sunucularında, kendi gizlilik politikasına göre işleyebilir. FAJR yalnız o alarm için kabul edilen tekrar sayısını tutar; sesi veya yazıya dökülmüş metni kaydetmez, saklamaz, göndermez. Alarm çalarken ekran tam parlaklığa çıkar ve fener saniyede bir yanıp söner; fener alarm ayarlarından kapatılabilir. Konuşma tanıma kullanılamazsa (ör. internetsiz) FAJR her söyleyişi telefonda sesinin yüksekliğinden sayar; bu ses yalnız bellekte incelenir, kaydedilmez, saklanmaz, gönderilmez. Mikrofon iznini vermezsen konuşma adımının yerine bulmaca çözülür. Alarm çalarken dinleme sırasında medya sesleri kısa süre kapatılır ve alarm ayarlarındaki “Alarm sesini koru” seçeneği kapatılmadıkça alarm sesinin kısılması engellenir; alarm bitince ikisi de eski hâline döner.</p>
+
+<h2>Google hesabı</h2>
+<p>Google ile giriş isteğe bağlıdır. FAJR, Android Credential Manager ve Firebase Authentication (Google LLC) kullanır. Giriş yaptığında Google ve Firebase hesap kimliğini, e-posta adresini, kimlik doğrulama anahtarlarını ve güvenlik ile kötüye kullanımı önleme amacıyla IP adresin dahil olağan servis/ağ bilgilerini <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> kapsamında işler. FAJR namaz kayıtlarını, ders cevaplarını, GPS koordinatlarını veya anket cevaplarını Firebase'e yüklemez. Bulut yedekleme ve eşitleme yoktur; başka telefonda giriş yapmak geçmişini geri getirmez.</p>
+
+<h2 id="abonelik">FAJR Premium aboneliği</h2>
+<p>FAJR Premium, Google Play Faturalandırma üzerinden satılan, isteğe bağlı ve otomatik yenilenen bir aboneliktir (aylık veya yıllık; uygun yeni abonelere ücretsiz deneme). Ödemeyi, ödeme yöntemini, fatura ülkesini ve satın alma kayıtlarını Google Play, <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Hizmet Şartları</a> kapsamında işler. Uygulama aboneliğin etkin olup olmadığını telefonundaki Google Play'e sorar ve Fajr alarmının Premium görevleri çevrimdışı da kullanabilmesi için yalnız bu evet/hayır durumunu cihazda saklar. Satın alma anahtarları yalnız satın almayı onaylamak için Google Play'e geri gönderilir; yayıncıya veya başka bir sunucuya gönderilmez. Premium, FAJR girişine değil Google Play hesabına bağlıdır. İstediğin zaman Google Play → Ödemeler ve abonelikler bölümünden iptal edebilirsin; iadeler Google Play iade politikasına tabidir. Yerel verileri veya FAJR hesabını silmek aboneliği iptal etmez.</p>
+
+<h2>Reklam, analiz ve hata raporları</h2>
+<p>FAJR'da reklam, analiz veya hata raporlama SDK'sı yoktur. Bu değişirse, değişiklik yayımlanmadan önce bu politika güncellenir.</p>
+
+<h2>Saklama ve yerel silme</h2>
+<p>Kayıtların sen silene kadar telefonunda kalır. Profil → Gizlilik → Tüm yerel verileri sil; profili, geçmişi, ilerlemeyi, kayıtlı takvimi ve tercihleri siler, alarmı durdurur. “Kayıtlı konumu unut” konum ayarlarını ve bunlara bağlı hatırlatıcı ile alarmı kaldırır. Uygulama verisini temizlemek veya uygulamayı kaldırmak da her şeyi siler. Android bulut yedeği ve cihaz aktarımı kapalıdır; yayıncıda kayıtlarının uzak bir kopyası yoktur.</p>
+
+<h2>Çocuklar</h2>
+<p>FAJR 13 yaş altı çocuklara yönelik değildir ve onlardan bilerek kişisel veri toplamaz. Google ile giriş isteğe bağlıdır ve Google'ın hesap yaşı kurallarına tabidir.</p>
+
+<section id="hesap-silme" class="delete">
+<h2>FAJR hesabını sil</h2>
+<p>Bu bölüm FAJR'a Google ile giriş yaptıysan geçerlidir. FAJR hesabını silmek, Firebase Authentication'daki FAJR giriş kaydını (Firebase hesap kimliği, e-posta ve giriş sağlayıcısı) siler. Google hesabın silinmez.</p>
+<p><strong>Uygulamadan:</strong> Profil → Google hesabı → FAJR hesabını sil adımını izle ve onayla. Silme hemen gerçekleşir. Android önce yeniden giriş isterse giriş yapıp adımı tekrarla.</p>
+<p><strong>Uygulama olmadan:</strong> kullandığın Google adresinden, konusu “FAJR hesap silme” olan bir e-postayı aşağıdaki adrese gönder. FAJR giriş kaydın 30 gün içinde silinir ve sana onay yanıtı gönderilir.</p>
+<p><strong>Saklanan bilgi:</strong> FAJR tarafında hiçbir şey. Namaz geçmişi ve ilerleme hiç yüklenmediği için, Profil → Gizlilik → Tüm yerel verileri sil ile silene veya uygulamayı kaldırana kadar telefonunda kalır. Google kendi güvenlik kayıtlarını Google Gizlilik Politikası kapsamında tutabilir.</p>
+</section>
+
+<section id="iletisim">
+<h2>İletişim</h2>
+<p>Yayıncı: Electrobrains Lab, Ankara, Türkiye. Gizlilik soruların veya hesap silme talebin için:</p>
+<div class="contact"><code id="mail-tr">alperenmyasin@gmail.com</code><button type="button" id="copy-tr" data-target="mail-tr">E-postayı kopyala</button></div>
+<p>Bu politikadaki değişiklikler yeni yürürlük tarihiyle bu sayfada yayımlanır.</p>
+</section>
+</section>
+</main>
+<script>
+document.querySelectorAll('.contact button').forEach(function(btn){
+  var label=btn.textContent;
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.target);
+    var done=function(){btn.textContent=btn.id==='copy-tr'?'Kopyalandı':'Copied';setTimeout(function(){btn.textContent=label},1600)};
+    var select=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+    try{navigator.clipboard.writeText(el.textContent).then(done,select)}catch(e){select()}
+  });
+});
+</script>
+</body>
+</html>
