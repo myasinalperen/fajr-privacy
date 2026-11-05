@@ -47,7 +47,7 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0 8px}
 <main>
 <section id="en" lang="en">
 <header>
-  <span class="meta">FAJR for Android · version 0.7.4 · effective 30 October 2026</span>
+  <span class="meta">FAJR for Android and iPhone · effective 5 November 2026</span>
   <h1>Privacy Policy</h1>
   <p>FAJR is a prayer-time, Fajr alarm and Islamic learning app published by <strong>Electrobrains Lab</strong> (Ankara, Türkiye). Most of what you do in FAJR stays on your phone. This page explains what does leave it.</p>
   <nav aria-label="Sections"><a href="#delete-account">Delete your account</a><a href="#contact">Contact</a><a href="#tr">Türkçe</a></nav>
@@ -93,6 +93,17 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0 8px}
 <h2>Children</h2>
 <p>FAJR is not directed at children under 13 and does not knowingly collect personal data from them. Google sign-in is optional and follows Google's own account age rules.</p>
 
+<h2>FAJR on iPhone</h2>
+<p>The sections above describe the Android app. The iPhone app follows the same rules, with these differences:</p>
+<ul>
+<li><strong>No account.</strong> The iPhone app has no sign-in and no account, and it does not use Firebase. The Google account and account deletion sections do not apply to it.</li>
+<li><strong>Location.</strong> iOS asks for permission while the app is in use. FAJR requests accuracy of about one kilometre. Apple's geocoding service may process your coordinates to find your city. Background location is not used.</li>
+<li><strong>Alarm.</strong> The Fajr alarm uses Apple's AlarmKit and notifications. Steps are counted with the motion sensor and are not stored or sent.</li>
+<li><strong>Speech.</strong> While the alarm or its trial is on screen, audio goes to Apple's speech recognition, on the device when the phone supports it, otherwise to Apple's servers under Apple's privacy policy. FAJR keeps only the count of accepted repetitions. It never records, stores or sends audio or transcripts.</li>
+<li><strong>Widgets.</strong> Home Screen and Lock Screen widgets read your prayer times and progress from storage shared only between the FAJR app and its widgets on your phone.</li>
+<li><strong>Deletion and backup.</strong> Profile → Privacy → Delete all local data removes your records, as does deleting the app. If you use iCloud or computer backups of your iPhone, they may include FAJR's data in your own backup. The publisher cannot access it.</li>
+</ul>
+
 <section id="delete-account" class="delete">
 <h2>Delete your FAJR account</h2>
 <p>This applies if you signed in to FAJR with Google. Deleting your FAJR account removes your FAJR sign-in record (Firebase account ID, email address and sign-in provider) from Firebase Authentication. Your Google account itself is not deleted.</p>
@@ -113,7 +124,7 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0 8px}
 
 <section id="tr" lang="tr">
 <header>
-  <span class="meta">Android için FAJR · sürüm 0.7.4 · yürürlük 30 Ekim 2026</span>
+  <span class="meta">Android ve iPhone için FAJR · yürürlük 5 Kasım 2026</span>
   <h1>Gizlilik Politikası</h1>
   <p>FAJR, <strong>Electrobrains Lab</strong> (Ankara, Türkiye) tarafından yayımlanan bir namaz vakti, Fajr alarmı ve dini öğrenme uygulamasıdır. FAJR'da yaptıklarının çoğu telefonunda kalır. Bu sayfa telefonundan nelerin çıktığını açıklar.</p>
   <nav aria-label="Bölümler"><a href="#hesap-silme">Hesabını sil</a><a href="#iletisim">İletişim</a><a href="#en">English</a></nav>
@@ -155,6 +166,17 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0 8px}
 
 <h2>Çocuklar</h2>
 <p>FAJR 13 yaş altı çocuklara yönelik değildir ve onlardan bilerek kişisel veri toplamaz. Google ile giriş isteğe bağlıdır ve Google'ın hesap yaşı kurallarına tabidir.</p>
+
+<h2>iPhone'da FAJR</h2>
+<p>Yukarıdaki bölümler Android uygulamasını anlatır. iPhone uygulaması aynı kurallara uyar; farklar şunlardır:</p>
+<ul>
+<li><strong>Hesap yok.</strong> iPhone uygulamasında giriş ve hesap yoktur, Firebase kullanılmaz. Google hesabı ve hesap silme bölümleri bu uygulama için geçerli değildir.</li>
+<li><strong>Konum.</strong> iOS, uygulama kullanımdayken izin ister. FAJR yaklaşık bir kilometre doğruluk ister. Şehrini bulmak için Apple'ın adres servisi koordinatları işleyebilir. Arka plan konumu kullanılmaz.</li>
+<li><strong>Alarm.</strong> Fajr alarmı Apple'ın AlarmKit'ini ve bildirimleri kullanır. Adımlar hareket sensörüyle sayılır; saklanmaz ve gönderilmez.</li>
+<li><strong>Konuşma.</strong> Alarm veya denemesi ekrandayken ses Apple'ın konuşma tanımasına gider: telefon destekliyorsa cihazda, desteklemiyorsa Apple'ın gizlilik politikası kapsamında Apple sunucularında işlenir. FAJR yalnız kabul edilen tekrar sayısını tutar; sesi veya metni kaydetmez, saklamaz, göndermez.</li>
+<li><strong>Widget'lar.</strong> Ana ekran ve kilit ekranı widget'ları namaz vakitlerini ve ilerlemeni, telefonunda yalnız FAJR ile widget'larının paylaştığı alandan okur.</li>
+<li><strong>Silme ve yedek.</strong> Profil → Gizlilik → Tüm yerel verileri sil kayıtlarını siler; uygulamayı silmek de aynı sonucu verir. iPhone'unu iCloud'a veya bilgisayara yedekliyorsan FAJR verileri kendi yedeğinde yer alabilir. Yayıncı bu yedeğe erişemez.</li>
+</ul>
 
 <section id="hesap-silme" class="delete">
 <h2>FAJR hesabını sil</h2>
